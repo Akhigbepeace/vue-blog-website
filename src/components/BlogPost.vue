@@ -40,7 +40,7 @@ onMounted(() => {
 
   <div class="p-5">
     <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-5">
-      <BlogCard :posts="posts" />
+      <BlogCard :posts="posts.slice(0, 5)" />
     </div>
 
     <RouterLink
